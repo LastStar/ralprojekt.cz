@@ -1,0 +1,80 @@
+@import 'vendor/_normalize-2.x';
+
+@import 'bourbon';
+@import 'neat';
+
+// text sizes
+$text: 14px;
+$small-text: golden-ratio($text, -1);
+$bigger-text: golden-ratio($text, 1);
+$small-title-text: golden-ratio($text, 2);
+$title-text: golden-ratio($text, 4);
+
+$main-width: 58em;
+
+body {
+  font-size: $text;
+  font-family: 'Tabac Sans';
+
+  > * {
+    @include outer-container;
+    max-width: $main-width;
+  }
+}
+
+header {
+  div.vcard {
+    @include row;
+
+    aside {
+      @include span-columns(6);
+
+      h1 {
+        background: url("/images/logo.png") no-repeat;
+        height: 6.5em;
+        text-indent: -2000px;
+      }
+
+      div.fn {
+        display: none;
+      }
+    }
+
+    article {
+      @include span-columns(6);
+      @include omega;
+      height: 200px !important;
+      text-align: right;
+      margin-top: 2em;
+
+      span.specialization {
+        font-family: 'Tabac Slab';
+        font-size: $bigger-text;
+        margin-top: 2em;
+        text-align: right;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 2em;
+
+  > div {
+    @include span-columns(4);
+  }
+
+  div:first-child {
+    text-align: left;
+  }
+
+  div:nth-child(2) {
+    text-align: center;
+  }
+
+  div:last-child {
+    @include omega;
+    text-align: right;
+  }
+}
+

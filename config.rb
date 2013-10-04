@@ -7,14 +7,6 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 
-# Loads IE8 compatible versions of normalize & jQuery if true (1.x).
-# Otherwise, loads IE8 incompatible versions (2.x).
-set :ie8_support, false
-
-# Syntax highlighting.
-activate :syntax
-set :syntax_theme, Rouge::Themes::Base16
-
 # Slim's default format is xhtml. Why oh why?
 Slim::Engine.default_options[:format] = :html5
 
@@ -60,6 +52,7 @@ end
 configure :development do
   Slim::Engine.default_options[:pretty] = true
   activate :livereload
+  activate :directory_indexes
 end
 
 

@@ -32,7 +32,38 @@ html.nojs
         a<> href="http://browsehappy.com/" upgrade your browser
         | to improve your experience.
 
+    header
+      div class="vcard"
+        aside
+          h1 class="fn url org" RAL Projekt
+
+        article
+          span class="street-address" Pod Vodárnou 4746
+          br
+          span class="locality" Jablonec nad Nisou&nbsp;
+          span class="postal-code" 466 05
+          br
+          span class="country-name" Česká Republika
+          br
+          br
+          span class="registration" IČO: 4783749249823
+          br
+          span class="tax-duty" DIČ: CZ79438375445
+          br
+          span class="bank-account" B.Ú.: 345345345/0980
+          br
+          br
+          span class="specialization" Mosty a inženýrské konstrukce
+
+
     == yield
 
     = javascript_include_tag 'app'
     = partial 'partials/_ga'
+
+    footer
+      div class="copyright" Copyright 2013 RAL Projekt s.r.o.
+      div class="email" info@ralprojekt.cz
+      div class="phone" +420 734 158 363
+
+
