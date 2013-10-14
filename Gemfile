@@ -19,3 +19,4 @@ gem "middleman-livereload", "~> 3.1.0"
 
 # Crush dems images
 gem "middleman-imageoptim", "~> 0.0.4"
+

@@ -18,28 +18,28 @@ ignore '/calendar.html'
 # Blog settings.
 ######################################################################
 
-Time.zone = "Amsterdam"
+#Time.zone = "Amsterdam"
 
-activate :blog do |blog|
-  blog.prefix = 'blog'
-  blog.permalink = ':year/:title.html'
-  # blog.sources = ":year-:month-:day-:title.html"
-  blog.taglink = "tags/:tag.html"
-  # blog.layout = "layout"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
-  # blog.year_link = ":year.html"
-  # blog.month_link = ":year/:month.html"
-  # blog.day_link = ":year/:month/:day.html"
-  blog.default_extension = ".md"
+# activate :blog do |blog|
+#   blog.prefix = 'blog'
+#   blog.permalink = ':year/:title.html'
+#   # blog.sources = ":year-:month-:day-:title.html"
+#   blog.taglink = "tags/:tag.html"
+#   # blog.layout = "layout"
+#   # blog.summary_separator = /(READMORE)/
+#   # blog.summary_length = 250
+#   # blog.year_link = ":year.html"
+#   # blog.month_link = ":year/:month.html"
+#   # blog.day_link = ":year/:month/:day.html"
+#   blog.default_extension = ".md"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+#   blog.tag_template = "tag.html"
+#   blog.calendar_template = "calendar.html"
 
-  blog.paginate = true
-  blog.per_page = 10
-  # blog.page_link = "page/:num"
-end
+#   blog.paginate = true
+#   blog.per_page = 10
+#   # blog.page_link = "page/:num"
+# end
 
 # Enable XML feed. Don't forget to edit feed.xml.builder first.
 # page "/feed.xml", :layout => false
@@ -68,7 +68,7 @@ configure :build do
   # Ensmallen assets
   activate :minify_css
   activate :minify_javascript
-  activate :image_optim
+  #activate :image_optim
   activate :gzip
   #
   # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
