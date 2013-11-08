@@ -68,9 +68,6 @@ configure :build do
   # Ensmallen assets
   activate :minify_css
   activate :minify_javascript
-  activate :imageoptim do |image_optim|
-    image_optim.pngout_options = false # Should disable pngout
-  end
   activate :gzip
   #
   # Change to your Google Analytics key (e.g. UA-XXXXX-Y)
