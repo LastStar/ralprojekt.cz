@@ -65,7 +65,7 @@ footer {
   margin-top: 2em;
 
   > div {
-    @include span-columns(4);
+    @include span-columns(3);
   }
 
   div:first-child {
