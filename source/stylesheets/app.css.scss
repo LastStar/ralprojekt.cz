@@ -8,7 +8,7 @@
 
 
 // text sizes
-$text: 14px;
+$text: 16px;
 $small-text: golden-ratio($text, -1);
 $bigger-text: golden-ratio($text, 1);
 $small-title-text: golden-ratio($text, 2);
@@ -27,6 +27,9 @@ body {
 }
 
 header {
+  border-bottom: 0.25em solid black;
+  margin-bottom: 1em;
+
   div.vcard {
     @include row;
 
@@ -62,6 +65,8 @@ header {
 }
 
 footer {
+  border-top: 0.1em solid black;
+  padding-top: 1em;
   margin-top: 2em;
 
   > div {
@@ -79,6 +84,43 @@ footer {
   div:last-child {
     @include omega;
     text-align: right;
+  }
+}
+
+.container {
+  .row {
+    @include row;
+
+    h2 {
+      margin: 0 0 0.5em 0;
+
+      &:first-child {
+        margin: 0.5em 0;
+
+      }
+    }
+
+    img {
+      @include span-columns(6);
+    }
+
+    p {
+      @include span-columns(6);
+      @include omega;
+
+      margin: 0.5em 0 0.5em 0;
+      &:nth-child(2) {
+        @include span-columns(12);
+      }
+
+    }
+
+    ul {
+      @include span-columns(6);
+      @include omega;
+    }
+
+
   }
 }
 
